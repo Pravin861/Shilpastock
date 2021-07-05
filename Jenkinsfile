@@ -2,8 +2,10 @@ pipeline {
 	agent any
 	stages {
         stage('Pre-Build Email') {
+ 		steps {
 		git branch: 'main', credentialsId: 'Github', url: 'https://github.com/Pravin861/Shilpastock.git'
 		}
+}
  	stage('Exeute shell') {
                 steps {
 
