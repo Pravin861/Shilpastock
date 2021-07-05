@@ -1,7 +1,7 @@
 pipeline {
 	agent any
 	stages {
-        stage('Pre-Build Email') {
+        stage('Checkout SCM') {
  		steps {
 		git branch: 'main', credentialsId: 'Github', url: 'https://github.com/Pravin861/Shilpastock.git'
 		}
