@@ -1,9 +1,13 @@
-node { 
+pipeline {
+	stages {
+        stage('Pre-Build Email') {
+		git branch: 'main', credentialsId: 'Github', url: 'https://github.com/Pravin861/Shilpastock.git'
+		}
+ 	stage('Exeute shell') {
+                steps {
 
-  stage 'checkout scm'
-  checkout scm
-
-  stage 'Deploy'
-  sh("ssh ubuntu@3.142.73.43 sh /home/ubuntu/deploy.sh")
-
+                   sshPublisher(publishers: [sshPublisherDesc(configName: '', transfers: [sshTransfer(cleanRemote: false, excludes: '', execCommand: 'sudo sh /root/script/autheticationservice.sh', execTimeout: 120000, flatten: false, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '/', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+                }
+		}
+            }
 }
