@@ -12,7 +12,7 @@ include 'includes/nav.php';
           <div class="item active">
             <img src="img/gallery_perform.png" alt="...">
             <div class="carousel-caption">
-              <h4>The new MacBook FOR KOMAL</h4>
+              <h4>The new MacBook Pro</h4>
               All the power blah blah..
             </div>
           </div>
