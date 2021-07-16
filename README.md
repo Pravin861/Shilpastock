@@ -1,6 +1,6 @@
 # Simple eComme
 
-It is a simple PHP & MySQL application that I made as a college project. Hope you like it & learn something from it!
+It is  PHP & MySQL application
 
 ---
 
@@ -25,11 +25,5 @@ It is a simple PHP & MySQL application that I made as a college project. Hope yo
 5. And you are ready to go! Hit URL to `/admin` and start adding products.
 
 ---
-
-### Credits
-
-* Prof. Rupali Kale
-* Kunal Khona
-* My family and friends
 
 ### MIT Licensed
